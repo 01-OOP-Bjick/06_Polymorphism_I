@@ -11,24 +11,9 @@ public class App {
         pollObj(queen);
         pollObj(worker);
         pollObj(drone);
-        // output(queen.doYourJob());
-        // output(worker.doYourJob());
-        // output(drone.doYourJob());
-        output("---------------------");
-        // output(queen.fly());
-        // output(worker.fly());
-        // output(drone.fly());
     }
-    // 1. Variante Overloading
-    private static void pollObj(Queen bee) {
-        output(bee.doYourJob());
-        output(bee.fly());
-    }
-    private static void pollObj(Worker bee) {
-        output(bee.doYourJob());
-        output(bee.fly());
-    }
-    private static void pollObj(Drone bee) {
+    // 2. Variante Polymorphie
+    private static void pollObj(HoneyBee bee) {
         output(bee.doYourJob());
         output(bee.fly());
     }
